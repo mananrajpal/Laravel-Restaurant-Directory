@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "a05779d0-f9e9-48e0-af6d-7791c17cbd2e",
+		"name": "Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories/show?id=2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories",
+						"show"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve all Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store a new category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories/store?name=Indian",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories",
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Indian"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Indian",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories/update",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories/delete",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

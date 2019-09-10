@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "b38eb842-25b0-407f-922a-1159328e3985",
+		"name": "cos30041task06 - Restaurants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve all restaurants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/restaurants",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"restaurants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve specific restaurant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/restaurants/show",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"restaurants",
+						"show"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+{
+			"name": "Store a new restaurant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "TEST",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "Hello",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "address1",
+							"value": "TestAddress1",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "address2",
+							"value": "TestAddress2",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "suburb",
+							"value": "testSuburb",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "state",
+							"value": "TES",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "numberofseats",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "country_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/restaurants/store",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"restaurants",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update restaurant",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "TEST1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "address11",
+							"value": "TestAddress1",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "address21",
+							"value": "TestAddress2",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "suburb1",
+							"value": "testSuburb",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "state",
+							"value": "TEE",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "numberofseats",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "country_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},						
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/restaurants/update",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"restaurants",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a restaurant",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/restaurants/destroy?id=5",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"restaurants",
+						"destroy"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "16854b4c-e95e-4e47-b9ed-46e07d36ec3c",
+		"name": "Post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "content",
+							"value": "Testing a post value",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "restaurant_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/posts/store",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"posts",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Replaced tested post content",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "restaurant_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/posts/update",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"posts",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/posts/destroy?id=2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"posts",
+						"destroy"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "37ba02c0-80fc-4cd4-af25-0f8356cf7062",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Show All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/users/show?id=2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"users",
+						"show"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "454545",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories/store",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Test1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1@yahoo.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123465",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories/update",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/categories/delete",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"categories",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

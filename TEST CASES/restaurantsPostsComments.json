@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "b38eb842-25b0-407f-922a-1159328e3985",
+		"name": "cos30041task06 - RestaurantsPostsComments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve specific restaurant with all posts and comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/restaurantsPostsComments/show",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"restaurants",
+						"show"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

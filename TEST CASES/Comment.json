@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "06f0c157-def7-4c22-9503-3852d2492a09",
+		"name": "Comment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Show All comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/comments",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "content",
+							"value": "post related comment",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "post_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/comments/store",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"comments",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update comment",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Replaced test post comment",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "post_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/comments/update",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"comments",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/cos30041task06/public/api/comments/destroy?id=4",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cos30041task06",
+						"public",
+						"api",
+						"comments",
+						"destroy"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
